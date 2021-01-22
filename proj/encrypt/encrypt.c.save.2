@@ -16,19 +16,25 @@ char shiftChar(char c, int shift, int direction)
 char a;
   for (int i = 0; i < 62; i++)
 {
-    if (c == CHARS[i]){
-      if (direction ==1){
-	if (62<i+shift){
-	  a = CHARS[i+shift-62];
-}       else {
-          a = CHARS[i+shift];
-}}    else {
-        if (0>i-shift){
-          a = CHARS[i-shift+62];
-}       else {
-          a = CHARS[i-shift];
-}}}}
+    if (c == CHARS[i]if (direction ==1){
+			if (62<i+shift){
+				a= CHARS[i+shift-62];
+}
+			 else {
+                                a = CHARS[i+shift];
+}                   else {
+                                a = CHARS[i-shift];
+}}}
 return a; 
+ // implement the character shift here:
+  //  given a char c shift it either forwards (direction == 1) or backwards (direction == 0)
+  //  use the CHARS array above
+  //  return the newly shifted char
+  //
+  // eg.
+  //   shiftChar('c', 3, 1) : 'f'
+  //   shiftChar('S', 2, 0) : 'P'
+  //   shiftChar('b', 3, 0) : '8'
 }
 
 
